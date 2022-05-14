@@ -42,7 +42,8 @@
 ---
 
 &emsp;&emsp;项目概览图如下，这个是我喜欢的结构，大家按照自己的喜好自行调整即可
-vue-template
+
+```markdown
 ├─.eslintignore
 ├─.eslintrc.js // eslint 配置内容
 ├─.gitignore
@@ -79,6 +80,7 @@ vue-template
 ├─public // 公共资源
 ├─config // vite 部分配置抽离
 ├─**test** // 单元测试
+```
 
 ### 三、项目参考
 
