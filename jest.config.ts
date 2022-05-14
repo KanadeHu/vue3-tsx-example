@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   roots: ['<rootDir>/__test__'],
   testMatch: [
     // 这里我们支持src目录里面增加一些单层，事实上我并不喜欢这样做

@@ -1,6 +1,6 @@
 # Vue3-Tsx-Example
 
-### 前置
+### 一、启动
 
 ---
 
@@ -16,9 +16,7 @@
 
 &emsp;&emsp;`pnpm run test`
 
-&emsp;&emsp;注意本项目模板没有加入任何的组件库，究其原因是 vue 相关的 ui 组件库项目来讲还是很丰富的，诸如 `element、ant-desigin-vue、vant`等等，这块留出空白区域教给使用的各位，按照自己熟悉的组件库来去开发
-
-### 一、模板介绍
+### 二、模板介绍
 
 ---
 
@@ -33,6 +31,7 @@
 - [vite-plugin-parser-html](https://github.com/KanadeHu/vite-plugin-parse-html)
 - [vue-test-utils](https://test-utils.vuejs.org/)
 - [jest](https://www.jestjs.cn/)
+- [element-plus](https://element-plus.org/zh-CN/)
 - vue/test-utils、@testing-library/dom、@testing-library/user-event、@testing-library/user-event（vue 单元测试工具）
 - @babel/core、babel-jest、@vue/babel-preset-app (babel 这里仅仅用来作单元测试，并没有和打包结合)
 - ?vue-jest (此项作为可选项目，我在项目中使用的是 tsx 语法糖，并没有使用 vue 的模板方式，单测就没有用该方式)
@@ -43,3 +42,46 @@
 ---
 
 &emsp;&emsp;项目概览图如下，这个是我喜欢的结构，大家按照自己的喜好自行调整即可
+vue-template
+├─.eslintignore
+├─.eslintrc.js // eslint 配置内容
+├─.gitignore
+├─.prettierrc // 代码书写规范
+├─README.md
+├─babel.config.js // 仅用于 jest 单测 babel 配置
+├─index.html
+├─jest.config.ts // 单测配置文件
+├─package.json
+├─pnpm-lock.yaml
+├─postcss.config.js
+├─tailwind.config.js // tailwind css 工具库配置
+├─tsconfig.json
+├─tsconfig.node.json
+├─vite.config.ts // vite 配置项
+├─src
+| ├─App.tsx
+| ├─main.ts
+| ├─typings.d.ts
+| ├─utils // 工具函数文件夹
+| | └index.ts
+| ├─tool // 系统工具库封装
+| | ├─axios.ts
+| | └errorHandle.ts
+| ├─style // 全局通用样式
+| | ├─index.css
+| | └index.scss
+| ├─store // 状态管理
+| ├─services // http 请求存放
+| ├─router // 路由
+| ├─page // 页面
+| ├─component // 组件相关
+| ├─assets // 静态资源
+├─public // 公共资源
+├─config // vite 部分配置抽离
+├─**test** // 单元测试
+
+### 三、项目参考
+
+---
+
+本项目相关构建思路参考[文章链接]()
