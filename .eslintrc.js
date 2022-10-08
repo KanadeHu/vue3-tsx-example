@@ -109,5 +109,6 @@ module.exports = {
     // 关于箭头函数
     'vue/arrow-spacing': 'error',
     'vue/html-indent': 'off',
+    'vue/multi-word-component-names': 'off',
   },
 }
